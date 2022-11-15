@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'red-rose';
+    src: url('../fonts/RedRose/RedRose-Regular.ttf');
+}
+@font-face {
+    font-family: 'red-rose-medium';
+    src: url('../fonts/RedRose/RedRose-Medium.ttf');
+}
+@font-face {
+    font-family: 'red-rose-bold';
+    src: url('../fonts/RedRose/RedRose-Bold.ttf');
+}
+@font-face {
+    font-family: 'red-rose-smbold';
+    src: url('../fonts/RedRose/RedRose-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'red-rose-light';
+    src: url('../fonts/RedRose/RedRose-Light.ttf');
+}
+
+@font-face {
+    font-family: 'sora-bold';
+    src: url('../fonts/Sora-Bold.ttf');
+}
