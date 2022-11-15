@@ -1,0 +1,37 @@
+div#connect-wallet-modal {
+    max-width: 600px;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+.modal-header {
+    border-bottom: 1px solid #CFD8DC;
+    padding: 20px;
+}
+.modal-title {
+    color: #333333;
+    font-weight: 700;
+    font-size: 24px;
+}
+.modal-txt {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+.connet-option {
+    background: #F8F9FA;
+    border: 1px solid #CFD8DC;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 1.2s;
+}
+.connet-option:hover{
+    transform: scale(1.02);
+}
+.connect-option-title {
+    font-family: var(--sec-font-bold);
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 18px;
+}

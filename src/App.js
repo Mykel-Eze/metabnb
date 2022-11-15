@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes , Route } from "react-router-dom";
+
+import 'materialize-css/dist/css/materialize.min.css';
+import "./css/fonts.css"
+import "./css/style.css"
+import "./css/navbar.css"
+import "./css/footer.css"
+import "./css/modal.css"
+import "./css/home.css"
+
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+
+import Home from "./pages";
+import PlaceToStay from "./pages/place-to-stay";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+
+        <Routes >
+          {/*---==== Contents Sections  ====---*/}
+          <Route path="/" element={<Home/>} />
+          <Route path="/place-to-stay" element={<PlaceToStay/>} />
+          {/*---==== end of Contents Sections  ====---*/}
+        </Routes >
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

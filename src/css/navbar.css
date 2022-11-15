@@ -1,0 +1,99 @@
+nav {
+    background-color: white;
+    box-shadow: none;
+    height: 75px;
+    line-height: 75px;
+    position: fixed;
+}
+.nav-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul a.nav-link {
+    color: #434343;
+    font-size: 20px;
+}
+nav ul a.nav-link:hover {
+    background-color: transparent;
+    font-weight: bold;
+    color: var(--pry-color);
+}
+img.brand-logo-img {
+    vertical-align: middle;
+}
+button.nav-btn.modal-trigger {
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    border-radius: 10px;
+    height: 48px;
+    width: 170px;
+    border: none;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 1.5s;
+    font-family: var(--font);
+}
+button.nav-btn.modal-trigger:hover {
+    transform: scale(0.90);
+}
+
+@media (min-width: 1200px) {
+    nav ul a.nav-link {
+        color: #434343;
+        font-size: 20px;
+        padding: 0;
+    }
+    nav ul.nav-links li:not(:last-child) {
+        padding-right: 48px;
+    }
+}
+
+@media (min-width: 993px) {
+    .dn-mobile {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    nav .sidenav-trigger {
+        margin: 0;
+        padding: 0;
+    }
+    nav .sidenav-trigger img {
+        width: 55px;
+        vertical-align: middle;
+    }
+    .sidenav-logo {
+        padding: 32px;
+        margin-bottom: 20px;
+    }
+    .sidenav li > a.nav-link {
+        color: #434343;
+        font-size: 20px;
+        border-bottom: 1px solid #434343;
+        padding: 6px 32px;
+        height: auto;
+    }
+    .sidenav li:nth-child(2) > a.nav-link {
+        border-top: 1px solid #434343;
+    }
+    li.connect-wallet-li {
+        position: absolute;
+        bottom: 60px;
+        padding: 22px 32px;
+        width: 100%;
+    }
+    li.connect-wallet-li button.nav-btn.modal-trigger {
+        width: 100%;
+    }
+    nav .sidenav-trigger img {
+        width: 35px;
+        vertical-align: initial;
+        position: relative;
+        top: 4px;
+    }
+    img.brand-logo-img {
+        vertical-align: middle;
+        width: 80%;
+    }
+}
