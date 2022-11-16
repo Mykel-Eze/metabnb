@@ -30,7 +30,7 @@ const Navbar = () => {
                                 <Link to="/place-to-stay" className="nav-link">Place to stay</Link>
                             </li>
                             <li>
-                                <Link to="/#nft" className="nav-link">NFTs</Link>
+                                <a href="/#nft" className="nav-link">NFTs</a>
                             </li>
                             <li>
                                 <Link to="#" className="nav-link">Community</Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
                     <Link to="/place-to-stay" className="nav-link sidenav-close">Place to stay</Link>
                 </li>
                 <li>
-                    <Link to="/#nft" className="nav-link sidenav-close">NFTs</Link>
+                    <a href="/#nft" className="nav-link sidenav-close">NFTs</a>
                 </li>
                 <li className="no-bottom-border">
                     <Link to="#" className="nav-link sidenav-close">Community</Link>
