@@ -13,6 +13,10 @@ const Navbar = () => {
         M.Modal.init(elemsModal);
     }, []);
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <div id="nav-wrapper">
             <nav>
@@ -24,16 +28,16 @@ const Navbar = () => {
 
                         <ul className="nav-links hide-on-med-and-down">
                             <li>
-                                <Link to="/" className="nav-link">Home</Link>
+                                <Link to="/" className="nav-link" onClick={scrollToTop}>Home</Link>
                             </li>
                             <li>
-                                <Link to="/place-to-stay" className="nav-link">Place to stay</Link>
+                                <Link to="/place-to-stay" className="nav-link" onClick={scrollToTop}>Place to stay</Link>
                             </li>
                             <li>
                                 <a href="/#nft" className="nav-link">NFTs</a>
                             </li>
                             <li>
-                                <Link to="#" className="nav-link">Community</Link>
+                                <Link to="#" className="nav-link" onClick={scrollToTop}>Community</Link>
                             </li>
                         </ul>
 
@@ -58,16 +62,16 @@ const Navbar = () => {
                 </div>
 
                 <li>
-                    <Link to="/" className="nav-link sidenav-close">Home</Link>
+                    <Link to="/" className="nav-link sidenav-close" onClick={scrollToTop}>Home</Link>
                 </li>
                 <li>
-                    <Link to="/place-to-stay" className="nav-link sidenav-close">Place to stay</Link>
+                    <Link to="/place-to-stay" className="nav-link sidenav-close" onClick={scrollToTop}>Place to stay</Link>
                 </li>
                 <li>
                     <a href="/#nft" className="nav-link sidenav-close">NFTs</a>
                 </li>
                 <li className="no-bottom-border">
-                    <Link to="#" className="nav-link sidenav-close">Community</Link>
+                    <Link to="#" className="nav-link sidenav-close" onClick={scrollToTop}>Community</Link>
                 </li>
                 
                 <li className="connect-wallet-li">

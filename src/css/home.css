@@ -49,6 +49,7 @@ button.submit-search-btn {
     width: 50%;
     box-sizing: border-box;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .partners-row.pry-bg {
