@@ -191,6 +191,10 @@ body .container {
   width: 90%;
 }
 
+.page-wrapper {
+  min-height: 50vh;
+}
+
 @media (min-width: 993px) {
   body .container {
     width: 85%;

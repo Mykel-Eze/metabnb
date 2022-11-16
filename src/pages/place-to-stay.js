@@ -1,6 +1,6 @@
 const PlaceToStay = () => {
     return (
-        <div id="places-page"></div>
+        <div id="places-page" className="page-wrapper"></div>
     )
 }
 
